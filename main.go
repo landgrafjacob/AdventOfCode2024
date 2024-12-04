@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/landgrafjacob/AdventOfCode2024/days/day01"
+	"github.com/landgrafjacob/AdventOfCode2024/days/day03"
 	"github.com/landgrafjacob/AdventOfCode2024/days"
 )
 
 func main() {
-	day := &day01.Day1{}
+	day := &day03.Day3{}
 	days.Execute(day)
 	
 }
