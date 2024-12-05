@@ -1,12 +1,14 @@
 package main
 
 import (
-	"github.com/landgrafjacob/AdventOfCode2024/days/day03"
+	"flag"
 	"github.com/landgrafjacob/AdventOfCode2024/days"
 )
 
 func main() {
-	day := &day03.Day3{}
+	dayPtr := flag.String("day", "1", "The number of the day to run")
+	flag.Parse()
+	day := days.GetDay(*dayPtr)
 	days.Execute(day)
 	
 }
