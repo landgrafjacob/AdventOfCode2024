@@ -1,15 +1,16 @@
 package day06
 
 import (
-	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 	"testing"
+
+	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
 var testAnswers helpers.TestAnswers
 
 func init() {
 	testAnswers.Part1 = 41
-	testAnswers.Part2 = 0
+	testAnswers.Part2 = 6
 }
 
 func TestPart1(t *testing.T) {
