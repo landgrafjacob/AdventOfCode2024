@@ -19,7 +19,7 @@ type VisitedCoords struct {
 func (v *VisitedCoords) Add(coord, facing [2]int) {
 	if v.Coords == nil {
 		v.Coords = map[[2]int]map[[2]int]bool{
-			coord: map[[2]int]bool{
+			coord: {
 				facing: true,
 			},
 		}
