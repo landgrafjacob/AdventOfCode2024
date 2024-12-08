@@ -2,12 +2,14 @@ package days
 
 import (
 	"fmt"
+
 	"github.com/landgrafjacob/AdventOfCode2024/days/day01"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day02"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day03"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day04"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day05"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day06"
+	"github.com/landgrafjacob/AdventOfCode2024/days/day07"
 )
 
 type Day interface {
@@ -16,17 +18,18 @@ type Day interface {
 }
 
 var dayMap map[string]Day
+
 func init() {
-	dayMap = map[string]Day {
-		"1": &day01.Day1{},
-		"2": &day02.Day2{},
-		"3": &day03.Day3{},
-		"4": &day04.Day4{},
-		"5": &day05.Day5{},
-		"6": &day06.Day6{},
-		"7": &day01.Day1{},
-		"8": &day01.Day1{},
-		"9": &day01.Day1{},
+	dayMap = map[string]Day{
+		"1":  &day01.Day1{},
+		"2":  &day02.Day2{},
+		"3":  &day03.Day3{},
+		"4":  &day04.Day4{},
+		"5":  &day05.Day5{},
+		"6":  &day06.Day6{},
+		"7":  &day07.Day7{},
+		"8":  &day01.Day1{},
+		"9":  &day01.Day1{},
 		"10": &day01.Day1{},
 		"11": &day01.Day1{},
 		"12": &day01.Day1{},
