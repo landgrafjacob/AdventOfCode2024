@@ -10,6 +10,7 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/days/day05"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day06"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day07"
+	"github.com/landgrafjacob/AdventOfCode2024/days/day08"
 )
 
 type Day interface {
@@ -28,7 +29,7 @@ func init() {
 		"5":  &day05.Day5{},
 		"6":  &day06.Day6{},
 		"7":  &day07.Day7{},
-		"8":  &day01.Day1{},
+		"8":  &day08.Day8{},
 		"9":  &day01.Day1{},
 		"10": &day01.Day1{},
 		"11": &day01.Day1{},
