@@ -4,9 +4,9 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day7 struct{}
+type Day struct{}
 
-func (d *Day7) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day07", fileName)
 
 	answer := 0
@@ -22,7 +22,7 @@ func (d *Day7) Part1(fileName string) int {
 	return answer
 }
 
-func (d *Day7) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day07", fileName)
 
 	answer := 0

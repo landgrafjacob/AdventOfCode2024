@@ -4,9 +4,9 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day6 struct{}
+type Day struct{}
 
-func (d *Day6) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day06", fileName)
 
 	// Initialize map, run, and return the number of coordinates visited
@@ -16,7 +16,7 @@ func (d *Day6) Part1(fileName string) int {
 	return m.NumVisited()
 }
 
-func (d *Day6) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day06", fileName)
 
 	// Run the trial without adding any additional obstacles

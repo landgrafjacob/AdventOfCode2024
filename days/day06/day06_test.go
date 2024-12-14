@@ -14,7 +14,7 @@ func init() {
 }
 
 func TestPart1(t *testing.T) {
-	d := &Day6{}
+	d := &Day{}
 	got := d.Part1("test.txt")
 	if got != testAnswers.Part1 {
 		t.Errorf("Expected: %d, Got: %d", testAnswers.Part1, got)
@@ -23,7 +23,7 @@ func TestPart1(t *testing.T) {
 }
 
 func TestPart2(t *testing.T) {
-	d := &Day6{}
+	d := &Day{}
 	got := d.Part2("test.txt")
 	if got != testAnswers.Part2 {
 		t.Errorf("Expected: %d, Got: %d", testAnswers.Part2, got)

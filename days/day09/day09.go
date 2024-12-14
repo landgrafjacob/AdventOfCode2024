@@ -4,9 +4,9 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day9 struct{}
+type Day struct{}
 
-func (d *Day9) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day09", fileName)
 	diskMap := &DiskMap{
 		Input: lines[0],
@@ -16,7 +16,7 @@ func (d *Day9) Part1(fileName string) int {
 	return diskMap.GetCheckSum()
 }
 
-func (d *Day9) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	_ = helpers.GetLines("days/day09", fileName)
 	return 0
 }

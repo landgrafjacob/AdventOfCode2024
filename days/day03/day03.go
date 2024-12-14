@@ -1,12 +1,13 @@
 package day03
 
 import (
-	"strconv"
 	"regexp"
+	"strconv"
+
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day3 struct {}
+type Day struct{}
 
 // Given a string of the form `mul({first_num},{second_sum})`,
 // returns the product first_num * second_num as an int
@@ -21,7 +22,7 @@ func parse(s string) int {
 	return product
 }
 
-func (d *Day3) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day03", fileName)
 
 	// Find all substrings of the form `mul({first_num},{second_sum})`
@@ -37,7 +38,7 @@ func (d *Day3) Part1(fileName string) int {
 	return answer
 }
 
-func (d *Day3) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day03", fileName)
 
 	// Find all substrings of the form `mul({first_num},{second_sum})`,

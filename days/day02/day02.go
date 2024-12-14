@@ -1,13 +1,13 @@
 package day02
 
 import (
-	"strings"
 	"strconv"
+	"strings"
 
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day2 struct {}
+type Day struct{}
 
 // Given a report (as slice of strings), returns whether or not the report is safe
 func isSafe(lineList []string) bool {
@@ -84,8 +84,7 @@ func sliceRemoveIndex(lineList []string, index int) []string {
 	return newSlice
 }
 
-
-func (d *Day2) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day02", fileName)
 
 	answer := 0
@@ -100,7 +99,7 @@ func (d *Day2) Part1(fileName string) int {
 	return answer
 }
 
-func (d *Day2) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day02", fileName)
 
 	answer := 0

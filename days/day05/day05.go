@@ -1,15 +1,16 @@
 package day05
 
 import (
-	"strings"
-	"strconv"
 	"slices"
+	"strconv"
+	"strings"
+
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day5 struct {}
+type Day struct{}
 
-func (d *Day5) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	sections := helpers.GetLineSections("days/day05", fileName)
 	rules := generateRules(sections[0])
 
@@ -23,7 +24,7 @@ func (d *Day5) Part1(fileName string) int {
 	return answer
 }
 
-func (d *Day5) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	sections := helpers.GetLineSections("days/day05", fileName)
 	rules := generateRules(sections[0])
 	o := helpers.Ordering{}
@@ -64,7 +65,7 @@ func buildMap(pageList []string) map[string]int {
 }
 
 func followsRule(pageMap map[string]int, rule []string) bool {
-	for i:=0; i<len(rule)-1; i++ {
+	for i := 0; i < len(rule)-1; i++ {
 		if _, ok := pageMap[rule[i]]; !ok {
 			continue
 		}
@@ -82,7 +83,7 @@ func isOrdered(pages []string, rules [][]string) bool {
 	pageMap := buildMap(pages)
 
 	for _, rule := range rules {
-		if !followsRule(pageMap,rule) {
+		if !followsRule(pageMap, rule) {
 			return false
 		}
 	}

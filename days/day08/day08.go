@@ -4,9 +4,9 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day8 struct{}
+type Day struct{}
 
-func (d *Day8) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day08", fileName)
 	a := &Antenna{}
 	a.Init(lines)
@@ -14,7 +14,7 @@ func (d *Day8) Part1(fileName string) int {
 	return len(a.Antinodes)
 }
 
-func (d *Day8) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day08", fileName)
 	a := &Antenna{}
 	a.Init(lines)

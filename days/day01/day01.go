@@ -1,14 +1,14 @@
 package day01
 
 import (
-	"strings"
-	"strconv"
 	"slices"
+	"strconv"
+	"strings"
 
 	"github.com/landgrafjacob/AdventOfCode2024/helpers"
 )
 
-type Day1 struct {}
+type Day struct{}
 
 // Given a slice representing lines of the file, returns the two columns (as slices of ints)
 func getColumns(fileSlice []string) ([]int, []int) {
@@ -26,7 +26,7 @@ func getColumns(fileSlice []string) ([]int, []int) {
 	return firstSlice, secondSlice
 }
 
-func (d *Day1) Part1(fileName string) int {
+func (d *Day) Part1(fileName string) int {
 	lines := helpers.GetLines("days/day01", fileName)
 	first, second := getColumns(lines)
 
@@ -49,10 +49,10 @@ func (d *Day1) Part1(fileName string) int {
 	return answer
 }
 
-func (d *Day1) Part2(fileName string) int {
+func (d *Day) Part2(fileName string) int {
 	lines := helpers.GetLines("days/day01", fileName)
 	first, second := getColumns(lines)
-	
+
 	// Count the occurences of each number in the second column
 	countMap := make(map[int]int)
 
