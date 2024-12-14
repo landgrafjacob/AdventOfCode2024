@@ -10,7 +10,7 @@ var testAnswers helpers.TestAnswers
 
 func init() {
 	testAnswers.Part1 = 1928
-	testAnswers.Part2 = 0
+	testAnswers.Part2 = 2858
 }
 
 func TestPart1(t *testing.T) {
