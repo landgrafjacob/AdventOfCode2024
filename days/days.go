@@ -15,6 +15,7 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/days/day10"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day11"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day13"
+	"github.com/landgrafjacob/AdventOfCode2024/days/day14"
 )
 
 type DayInterface interface {
@@ -39,7 +40,7 @@ func init() {
 		"11": &day11.Day{},
 		"12": &day01.Day{},
 		"13": &day13.Day{},
-		"14": &day01.Day{},
+		"14": &day14.Day{},
 		"15": &day01.Day{},
 		"16": &day01.Day{},
 		"17": &day01.Day{},
