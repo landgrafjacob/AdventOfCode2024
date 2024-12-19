@@ -20,3 +20,11 @@ func GCD(a, b int) int {
 func Mod(a, b int) int {
 	return (a%b + b) % b
 }
+
+func AbsRune(a rune) rune {
+	if a < 0 {
+		return -1 * a
+	} else {
+		return a
+	}
+}

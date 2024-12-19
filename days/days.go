@@ -14,6 +14,7 @@ import (
 	"github.com/landgrafjacob/AdventOfCode2024/days/day09"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day10"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day11"
+	"github.com/landgrafjacob/AdventOfCode2024/days/day12"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day13"
 	"github.com/landgrafjacob/AdventOfCode2024/days/day14"
 )
@@ -38,7 +39,7 @@ func init() {
 		"9":  &day09.Day{},
 		"10": &day10.Day{},
 		"11": &day11.Day{},
-		"12": &day01.Day{},
+		"12": &day12.Day{},
 		"13": &day13.Day{},
 		"14": &day14.Day{},
 		"15": &day01.Day{},
