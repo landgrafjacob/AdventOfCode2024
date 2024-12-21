@@ -30,6 +30,11 @@ func (s *Set) Union(s2 *Set) *Set {
 	}
 }
 
+func (s *Set) IsIn(element any) bool {
+	_, ok := s.setMap[element]
+	return ok
+}
+
 func (s *Set) Length() int {
 	return len(s.setMap)
 }
